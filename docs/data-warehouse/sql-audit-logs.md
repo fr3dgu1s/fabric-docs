@@ -28,6 +28,10 @@ The SQL audit logs feature is currently in preview.
 
 To get started, review the steps in [How to configure SQL audit logs in Fabric Data Warehouse (Preview)](configure-sql-audit-logs.md).
 
+> [!IMPORTANT]  
+> SQL Audit Logs is optimized for availability and performance of the database or instance being audited. During periods of very high activity or high network load, the auditing feature might allow transactions to proceed without recording all of the events marked for auditing.
+
+
 ## Storage
 
 All logs are encrypted at rest, stored in the OneLake, and not directly visible to users.
